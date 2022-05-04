@@ -1,0 +1,116 @@
+// +--------+
+// | BUTTON |
+// +--------+
+
+.btn {
+    position: relative;
+    padding: 2.5rem 10rem;
+    border: none;
+    border-radius: 50px;
+    color: var(--color-white);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .2s;
+    outline: none;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 500%;
+        width: 150%;
+        top: -200%;
+        left: -25%;
+        background: linear-gradient(to right, var(--color-cyan), var(--color-blue));
+        transition: transform .5s;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        animation: .5s linear infinite spin;
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+}
+
+// +---------+
+// | FEATURE |
+// +---------+
+
+.feature {
+    text-align: center;
+
+    &__img {
+        height: 10rem;
+        width: auto;
+    }
+
+    &__heading {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5rem;
+    }
+}
+
+// +-------------+
+// | TESTIMONIAL |
+// +-------------+
+
+.testimonial-card {
+    max-width: 50rem;
+    padding: 4rem 3.5rem;
+    border-radius: 6px;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.03);
+    background-color: var(--color-dark-blue-4);
+
+    &__review {
+        margin-bottom: 3rem;
+    }
+
+    &__reviewer-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__avatar {
+        height: auto;
+        width: 4rem;
+        margin-right: 1.5rem;
+        border-radius: 50%;
+    }
+
+    &__description-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    &__title {
+        font-size: 1rem;
+    }
+
+    &:first-child {
+        position: relative;
+
+        ::before {
+                content: url(../img/bg-quotes.png);
+                position: absolute;
+                top: -4rem;
+                left: -2rem;
+                transform: scale(.75);
+                z-index: -1;
+
+                @media only screen and (min-width: 800px) {
+                    top: -4.5rem;
+                    left: -1.5rem;
+                    transform: scale(1);
+                }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+// BODY
+
+body {
+    color: var(--color-white);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75rem;
+}
+
+// HEADER
+
+.header__nav li a {
+    color:  var(--color-white);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    &:hover {
+        background: linear-gradient(to right, var(--color-cyan), var(--color-blue));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @media only screen and (min-width: 400px) {
+        font-size: 1.875rem;
+    }
+}
+
+// HERO
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+
+    @media only screen and (min-width: 200px) {
+        font-size: 3rem;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (min-width: 800px) {
+        font-size: 4.5rem;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        font-size: 5rem;
+    }
+}
+
+.hero {
+    &__subheading {
+        font-size: 2.25rem;
+
+        @media only screen and (min-width: 200px) {
+            font-size: 1.875rem;
+        }
+    
+        @media only screen and (min-width: 600px) {
+            font-size: 2rem;
+        }
+    
+        @media only screen and (min-width: 1000px) {
+            font-size: 2.25rem;
+        }
+    }
+}
+
+// ABOUT
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+
+    @media only screen and (min-width: 200px) {
+        font-size: 2.25rem;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        font-size: 3rem;
+    }
+
+    @media only screen and (min-width: 800px) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        font-size: 4.5rem;
+    }
+}
+
+.about {
+    font-size: 1.75rem;
+    
+    &__link {
+        background: linear-gradient(to right, var(--color-cyan), var(--color-blue));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        font-size: 2rem;
+    }
+}
+
+// CTA 
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+
+    @media only screen and (min-width: 200px) {
+        font-size: 2.25rem;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        font-size: 2.75rem;
+    }
+
+    @media only screen and (min-width: 800px) {
+        font-size: 3.25rem;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        font-size: 3.75rem;
+    }
+}
+
+// FOOTER
+
+.footer__nav li a {
+    color:  var(--color-white);
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+
+    &:hover {
+        background: linear-gradient(to right, var(--color-cyan), var(--color-blue));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
